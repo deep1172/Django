@@ -1,4 +1,3 @@
----
 
 ```markdown
 # 🐍 Django Project: Learning Project
