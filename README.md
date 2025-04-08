@@ -1,12 +1,12 @@
 
-```markdown
-# 🐍 Django Project: Learning Project
+# 🐍 Django Project: Django Learning Handson
 
-A Django-based web application Learing for fast pace development.
+A Django-based web application designed for [brief description: e.g., facial recognition, blog site, e-commerce, etc.].
 
 ---
 
 ## 📁 Project Structure
+
 
 ```
 Djangodev/
@@ -79,9 +79,6 @@ python manage.py migrate
 
 # 6. Run server
 python manage.py runserver
-```
-
----
 
 ## ⚙️ Tech Stack
 
