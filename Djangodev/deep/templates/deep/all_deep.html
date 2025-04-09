@@ -5,5 +5,23 @@ Deep Home Page
 {% endblock %}
 
 {% block content %}
-<h1>Deepak ka app |Deepak Home page</h1>
+<h1 class="bg-red-300">Deepak ka app |Deepak Home page</h1>
+
+<div class="grid grid-cols-3 gap-4 m-4 ">
+{% for deep in deep %}
+
+<div class="bg-blue-800 m-4 p-5 ">
+    <img class="rounded aspect-5/3 " src="{{deep.image.url}}" alt="image">
+    <h3 class="text-2xl font-bold">{{deep.name}}</h3>
+    <a href="{% url 'deep_detail' deep.id %}">
+        <button type="button"
+        class="inline-flex items-center w-[100%]justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+        >
+        {{deep.type}} - {{deep.id}}
+        </button>
+    </a>
+</div>
+
+{% endfor %} 
+</div>
 {% endblock %}
